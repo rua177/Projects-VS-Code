@@ -16,8 +16,8 @@ Reserva sala[MAX_FILAS][MAX_CADEIRAS];
 int main() {
     int F, C;
     
-    for (int i = 0; i < MAX_FILAS; i++) {
-        for (int j = 0; j < MAX_CADEIRAS; j++) {
+    for (int i = 0; i < MAX_FILAS; i = i + 1) {
+        for (int j = 0; j < MAX_CADEIRAS; j = j + 1) {
             sala[i][j].ocupado = 0;
             sala[i][j].pago = 0;
             strcpy(sala[i][j].nome, "");
